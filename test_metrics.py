@@ -35,9 +35,9 @@ class TestDeliveryMetrics(unittest.TestCase):
     # FOR STEP 5 (CONTROLLED TEST FAILURE DEMONSTRATION):
     # Uncomment the test below (or change an assert) to fail the build intentionally:
     # --------------------------------------------------------------------------
-    # def test_controlled_failure_for_demo(self):
-    #     """Intentional test failure to prove Jenkins marks the build as failed."""
-    #     self.assertEqual(1, 2, "Controlled test failure to demonstrate Jenkins failure detection!")
+    def test_controlled_failure_for_demo(self):
+        """Intentional test failure to prove Jenkins marks the build as failed."""
+        self.assertEqual(1, 2, "Controlled test failure to demonstrate Jenkins failure detection!")
 
 if __name__ == "__main__":
     unittest.main()
